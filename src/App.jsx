@@ -1,6 +1,7 @@
 
 import './App.css'
 import RepositoryCard from './components/RepositoryCard'
+import heroImage from '../src/images/hero-image-github-profile.png'
 
 function App() {
 
@@ -8,9 +9,9 @@ function App() {
     <>
       <div className="flex flex-col gap-[12px] bg-[#20293A]">
         <header className='relative'>
-          <img className='' src='src/images/hero-image-github-profile.png' />
+          <img className='' src={heroImage} />
           <div className='absolute right-[50%] translate-x-1/2 top-[32px] flex flex-col w-fit gap-[8px]'>
-            <input className='p-[16px] rounded-lg bg-[#20293A] w-[400px]' placeholder='username'></input>
+          <input className='p-[16px] rounded-lg bg-[#20293A] w-[400px]' placeholder='username'></input>
             <div className='p-[8px] rounded-lg bg-[#20293A] w-[400px] flex gap-[12px]'>
               <img className='size-[60px]'></img>
               <div className='flex flex-col justify-center'>
